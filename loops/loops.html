@@ -15,8 +15,23 @@ function getRandomInt(min, max) {
 }
 
 var randomInt = getRandomInt(1, 100);
+var guess=prompt("guess a num from 1 to 100")
+var x=1
 /* END STARTING CODE */
-
+var k=0
+while(k==0){
+	while(guess>randomInt){
+		guess=prompt("you guessed too high..try and guess again")
+		Console.log("you guessed too high..try and guess again")
+		x++}
+	while(guess<randomInt){
+		guess=prompt("you guessed too low..try and guess again")
+		Console.log("you guessed too low..try and guess again")
+		x++}
+	while(guess==randomInt && k==0){
+		Console.log("you guessed correctly! it took you"+x+"tries")
+		k++}
+	}
 // your code goes under here
 
     </script>
